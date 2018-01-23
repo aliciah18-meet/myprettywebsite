@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>Log In</title>
+</head>
+<body>
+<br><br><br><br>
+<h1>Log In</h1> 
+<!--https://www.daniweb.com/programming/web-development/code/330933/a-simple-html-login-page-using-javascript-->
+
+<form name="login">
+Username:  <input type="text" name="userid"/><br><br>
+Password:  <input type="password" name="pswrd"/><br><br>
+<input type="button" onclick="check(this.form)" value="Log in"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+
+</body>
+</html>
+<!--make a border around log in and include checkbox and link for terms and conditions--!> 
