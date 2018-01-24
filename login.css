@@ -3,10 +3,11 @@ body {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 45px;
 	font-style: bold;
 	font-family: "apple chancery";
 }
+
 
 input {
     padding: 5px 5px;
@@ -15,5 +16,7 @@ input {
 }
 
 input [type=button]{
-	padding: 5px 5px;
+	 float: center;
+  	 width: 10%;
+
 }

@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #4285f4;
     overflow: hidden;
 }
 
@@ -20,12 +20,12 @@ body {
 }
 
 .navbar a:hover {
-    background-color: grey;
-    color: black;
+    background-color: #4265f4;
+    color: white;
 }
 
 .active {
-    background-color: black;
+    background-color: #4285f4;
     color: white;
 }
 
