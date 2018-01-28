@@ -32,7 +32,7 @@ def signup():
 		user= User(request.form['username'], request.form['passwrd'])
 		db.session.add(User)
 		db.session.commit
-		return render_template('templates/home.html')
+		return render_template('home2.html')
 
 if __name__ == "__main__":
 	app.debug = True
@@ -44,5 +44,5 @@ def login():
 		return render_template("templates/login.html")
 	elif request.method == "POST":
 		session.query.User
-		return render_template('templates/home.html')
+		return render_template('home2.html')
 
