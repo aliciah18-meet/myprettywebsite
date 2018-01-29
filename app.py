@@ -26,23 +26,25 @@ def home():
 
 @app.route('/signup', methods=['GET','POST'])
 def signup():
-	if request.method == "GET":
-		return render_template("templates/signup.html")
-	elif request.method == "POST":
-		user= User(request.form['username'], request.form['passwrd'])
+	if request.method == 'GET':
+		return render_template('signup.html')
+	elif request.method == 'POST':
+		user= User(request.form['username'], request.form['password'])
 		db.session.add(User)
 		db.session.commit
-		return render_template('templates/home.html')
+		return render_template('home2.html')
 
-if __name__ == "__main__":
-	app.debug = True
-	app.run()
+
 
 @app.route('/login', methods=['GET','POST'])
 def login():
 	if request.method == "GET":
-		return render_template("templates/login.html")
+		return render_template('login.html')
 	elif request.method == "POST":
 		session.query.User
-		return render_template('templates/home.html')
 
+		return render_template('home.html')
+
+if __name__ == "__main__":
+	app.debug = True
+	app.run()
