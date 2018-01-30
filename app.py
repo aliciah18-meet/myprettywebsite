@@ -29,9 +29,13 @@ def signup():
 	if request.method == 'GET':
 		return render_template('signup.html')
 	elif request.method == 'POST':
+		print ('hello')
 		user= User(request.form['username'], request.form['password'])
-		db.session.add(User)
-		db.session.commit
+		print ('h1')
+		db.session.add(user)
+		print ('2')
+		db.session.commit()
+		print ("hi")
 		return render_template('home2.html')
 
 
