@@ -11,15 +11,21 @@
 
 <form method='POST' action='/login'>
 <b>Username </b><br><input type="text" placeholder="Enter Username" name="username"/><br><br>
-<b>Password </b><br><input type="password" placeholder="Enter Password" name="passwrd"/><br><br>
+<b>Password </b><br><input type="password" placeholder="Enter Password" name="password"/><br><br>
  <label>
       <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me 
  </label>
  <br>
-<input type="button" value="Submit"/>
+<input type="submit" value="Submit"/>
 <input type="reset" value="Cancel"/>
 </form>
 
+{% if log_in==False %}
+<script type="text/javascript">
+	alert('Incorrect username or password.')
+</script>
+
+{% endif %}
 
 
 </body>

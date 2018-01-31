@@ -4,22 +4,6 @@
 	<link rel="stylesheet" type="text/css" href="static/home.css">
 	<title>YourPortfolio</title>
 
-
-  <script type="text/javascript">
-
-    $("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000); 
-  </script>
-
-
 </head>
 
 <body>
@@ -34,14 +18,12 @@ setInterval(function() {
 </div>
 
 
-<div id="slideshow">
-   <div>
-     <img src="{{url_for('static', filename='yp.jpg')}}">
-   </div>
-   <div>
-     <img src="{{url_for('static', filename='screenshot.jpg')}}">
-   </div>
-</div>
+<img src="{{url_for('static', filename='yp.jpg')}}">
+<br>
+<img src="arrow.jpg" width="120" height="120" border="0">
+<br>
+<img src="{{url_for('static', filename='screenshot.jpg')}}">
+  
 
 </body>
 </html>

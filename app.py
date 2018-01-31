@@ -12,10 +12,10 @@ class User(db.Model):
     __tablename__ = "users"
     id = db.Column (db.Integer, primary_key=True)
     user = db.Column(db.String(30),unique=True)
-    passwrd = db.Column(db.String(30),unique=True)
-    def __init__(self, user, passwrd):
+    password = db.Column(db.String(30),unique=True)
+    def __init__(self, user, password):
     	self.user = user
-    	self.passwrd = passwrd
+    	self.password = password
 
 
 db.create_all()
@@ -29,13 +29,9 @@ def signup():
 	if request.method == 'GET':
 		return render_template('signup.html')
 	elif request.method == 'POST':
-		print ('hello')
 		user= User(request.form['username'], request.form['password'])
-		print ('h1')
 		db.session.add(user)
-		print ('2')
 		db.session.commit()
-		print ("hi")
 		return render_template('home2.html')
 
 
@@ -45,9 +41,17 @@ def login():
 	if request.method == "GET":
 		return render_template('login.html')
 	elif request.method == "POST":
-		session.query.User
+		log_in=User.query.filter_by(user=request.form['username'], password=request.form['password']).first()
+		
+		if log_in == None:
+			return render_template('login.html', log_in=False)
+		else:
+			return render_template('home2.html')
 
-		return render_template('home.html')
+
+@app.route('/logout', methods=['GET'])
+def logout():
+	return render_template('home.html')
 
 if __name__ == "__main__":
 	app.debug = True
