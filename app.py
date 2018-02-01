@@ -53,15 +53,11 @@ def login():
 def logout():
 	return render_template('home.html')
 
-if __name__ == "__main__":
-	app.debug = True
-	app.run()
 
 
 @app.route('/viewportfolio')
 def view_portfolio():
 	return render_template('viewportfolio.html')
-
 
 @app.route('/viewportfolio2')
 def view_portfolio2():
@@ -70,3 +66,7 @@ def view_portfolio2():
 @app.route('/makeportfolio')
 def make_portfolio():
 	return render_template('makeportfolio.html')
+
+if __name__ == "__main__":
+	app.debug = True
+	app.run()
