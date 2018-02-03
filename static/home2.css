@@ -9,41 +9,41 @@ h2 {
 	font-size: 45px;
 	font-style: underline;
 	font-style: italic;
+    text-align: center;
 }
 
 body {
-    text-align: center;
     background: url(wood.jpg);
-    color: white;
+    color: black;
     font-family: "Times New Roman";
-    font-size: 20px;
 }
 
 
 
 .navbar {
-    background-color: #4285f4;
+    background-color: white;
     overflow: hidden;
+    opacity: 1;
 }
 
 .navbar a {
     float: left;
-    display: block;
+    display: flex;
     color: #f2f2f2;
     text-align: center;
-    padding: 16px 28px;
+    padding: 15px 50px;
     text-decoration: none;
     font-size: 25px;
+    color: black;
+    font-family: "Times New Roman";
 }
 
 .navbar a:hover {
-    background-color: #4265f4;
-    color: white;
+    background-color: grey;
 }
 
 .active {
-    background-color: #4285f4;
-    color: white;
+    background-color: white;
 }
 
 .navbar .icon {
@@ -51,3 +51,34 @@ body {
 }
 
 
+
+
+.margin {
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin: auto;
+    width: 50%;
+    height: 579px;
+}
+
+
+
+.subheading {
+    font-style: italic;
+    color: black;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    position: absolute;
+    top: 330px;
+    left: 370px;
+}
+
+
+
+
+.logo {
+    position: absolute;
+    top:490px;
+    left: 10px;
+}

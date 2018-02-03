@@ -1,11 +1,100 @@
 body {
-    text-align: left;
     background: url(wood.jpg);
-    color: white;
-    font-family: "Times New Roman";
-    font-size: 20px;
 }
 
-div {
-	margin-left: 10px;
+#first {
+	top: 90px;
+	left: 20px;
+}
+
+#second {
+	top: 90px;
+	left: 450px;
+}
+
+#third {
+	top: 90px;
+	left: 880px;
+}
+
+#fourth {
+	top: 380px;
+	left: 20px;
+}
+
+#fifth {
+	top: 380px;
+	left: 450px;
+;
+}
+
+.picture{
+	position: absolute;
+	padding:1px;
+    border:1px solid #fff;
+    background-color: black
+}
+
+.subheading {
+	font-style: italic;
+	color: white;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    position: absolute
+}
+
+
+#subheading1{
+	 top: 330px;
+	 left: 150px;
+}
+
+#subheading2{
+	top: 330px;
+	left: 580px;
+}
+
+#subheading3{
+	top: 330px;
+	left: 990px;
+}
+
+#subheading4{
+	top: 620px;
+	left: 150px;
+}
+
+#subheading5{
+	top: 620px;
+	left: 580px;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.navbar a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: "Times New Roman";
+}
+
+.navbar a:hover {
+    background-color: grey;
+}
+
+.active {
+    background-color: white;
+}
+
+.navbar .icon {
+    display: none;
 }

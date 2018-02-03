@@ -60,3 +60,9 @@ input[type=text]:focus, input[type=password]:focus {
     position:relative;
     top:1px;
 }
+
+.logo {
+    position: absolute;
+    top:490px;
+    left: 10px;
+}

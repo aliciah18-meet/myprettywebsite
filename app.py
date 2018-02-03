@@ -22,7 +22,13 @@ db.create_all()
 
 @app.route('/', methods=['GET'])
 def home():
-	return render_template('home.html')
+	if request.method == 'GET':
+		return render_template('home.html')
+
+@app.route('/home2', methods=['GET'])
+def home2():
+	if request.method == 'GET':
+		return render_template('home2.html')
 
 @app.route('/signup', methods=['GET','POST'])
 def signup():

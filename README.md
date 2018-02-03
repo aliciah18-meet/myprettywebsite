@@ -1,3 +1,3 @@
 # myprettywebsite
-discoverart.com
-u can discover art and stuff
+yourportfolio.com
+make professional portfolios
