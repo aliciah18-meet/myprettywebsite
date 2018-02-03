@@ -20,7 +20,7 @@ class User(db.Model):
 
 db.create_all()
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
 	return render_template('home.html')
 

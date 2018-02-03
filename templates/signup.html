@@ -3,15 +3,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="static/signup.css">
 	<title>Sign Up</title>
+  <br><br><h1>Sign Up</h1>
 </head>
 <body>
-<br><br>
-<form method = 'POST' action="/signup">
-  <div class="container">
-    <h1>Sign Up</h1>
-    <p>To create an account, fill in the required fields below.</p>
-    <hr>
 
+
+<form method= 'POST' action="/signup">
+  <div class="container">
+    <p>To create an account, fill in the required fields below.</p>
     <label><b>Username</b><br></label>
     <input type="text" placeholder="Enter Username" name="username" required>
     <br>
@@ -23,11 +22,11 @@
 
    
 
-    <p><a href="#" style="color:dodgerblue">Terms & Privacy</a>		</p>
+    <p><a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
 
     <div class="clearfix">
-      <button type="submit" class="signupbtn">Sign Up</button>
-      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="button">Sign Up</button>
+      <button type="button" class="button" href="/home.html">Cancel</button>
       
     </div>
   </div>
